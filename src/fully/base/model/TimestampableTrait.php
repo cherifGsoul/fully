@@ -21,7 +21,7 @@ trait TimestampableTrait
     return $this->updatedAt;
   }
 
-  public function setUpdated(\Datetime $updatedAt)
+  public function setUpdatedAt(\Datetime $updatedAt)
   {
     $this->updatedAt = $updatedAt;
   }
