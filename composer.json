@@ -1,0 +1,13 @@
+{
+    "name": "cherif/fully",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.tv"
+        }
+    ],
+    "autoload": {
+      "psr-4": { "fully\\": "src/fully" }
+    },
+    "require": {}
+}

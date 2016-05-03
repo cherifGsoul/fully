@@ -1,0 +1,19 @@
+{
+    "name": "fully/base",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": { "fully\\base\\": "" }
+    },
+    "autoload-dev": {
+        "psr-4": { "fully\\base\\spec\\": "spec/" }
+    }
+}

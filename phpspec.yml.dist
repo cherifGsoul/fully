@@ -1,0 +1,3 @@
+suites:
+  entry: { namespace: fully\entry, psr4_prefix: fully\entry, spec_path: src/fully/entry, src_path: src/fully/entry }
+  attribute: { namespace: fully\attribute, psr4_prefix: fully\attribute, spec_path: src/fully/attribute, src_path: src/fully/attribute }

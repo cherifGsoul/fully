@@ -1,0 +1,5 @@
+suites:
+  entry:
+    namespace: fully\attribute
+    psr4_prefix: fully\attribute
+    src_path: .
