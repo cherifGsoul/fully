@@ -8,6 +8,8 @@ use fully\entry\model\EntryInterface;
 use fully\base\model\TimestampableInterface;
 use fully\base\model\ToggleableInterface;
 use fully\base\model\SluggableInterface;
+use fully\base\model\AssociableInterface;
+use fully\field\model\FieldInterface;
 
 class EntrySpec extends ObjectBehavior
 {
@@ -66,5 +68,21 @@ class EntrySpec extends ObjectBehavior
     public function its_has_no_slug_by_default()
     {
       $this->getSlug()->shouldReturn(null);
+    }
+
+    public function it_implements_associable()
+    {
+      $this->shouldImplement(AssociableInterface::class);
+    }
+
+    public function it_has_spl_object_storage_by_default()
+    {
+      $this->getFields()->shouldHaveType('\SplObjectStorage');
+    }
+
+    public function it_can_add_field(FieldInterface $field)
+    {
+      $this->addField($field);
+      $this->hasField($field)->shouldReturn(true);
     }
 }

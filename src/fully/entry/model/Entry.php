@@ -4,6 +4,7 @@ namespace fully\entry\model;
 use fully\base\model\TimestampableTrait;
 use fully\base\model\ToggleableTrait;
 use fully\base\model\SluggableTrait;
+use fully\field\model\FieldInterface;
 
 class Entry implements EntryInterface
 {
@@ -12,12 +13,16 @@ class Entry implements EntryInterface
   protected $id;
   protected $title;
   protected $publishedOn;
+  protected $fields;
+  protected $relations;
 
 
   public function __construct()
   {
     $this->publishedOn = new \DateTime();
     $this->createdAt = new \DateTime();
+    $this->fields = new \SplObjectStorage();
+    $this->relations = new \SplObjectStorage();
   }
 
   public function __toString()
@@ -48,5 +53,27 @@ class Entry implements EntryInterface
   public function setPublishedOn(\DateTime $publishedOn)
   {
     $this->publishedOn = $publishedOn;
+  }
+
+  public function getFields()
+  {
+    return $this->fields;
+  }
+
+  public function setFields(\SplObjectStorage $fields)
+  {
+    foreach($fields as $field) {
+      $this->addField($field);
+    }
+  }
+
+  public function addField(FieldInterface $field)
+  {
+    $this->fields->attach($field);
+  }
+
+  public function hasField(FieldInterface $field)
+  {
+    return $this->fields->contains($field);
   }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a88975e0c2bed13cdb207cc56c165143",
-    "content-hash": "067dd0d7209e489a55f7278848bb15a0",
+    "hash": "6511024bf0dc3112fc14a73a4c044d56",
+    "content-hash": "2bcae19b54e579a3054bc3c9d86e4e1b",
     "packages": [
         {
             "name": "fully/base",
@@ -25,6 +25,36 @@
             "autoload-dev": {
                 "psr-4": {
                     "fully\\base\\spec\\": "spec/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cherif BOUCHELAGHEM",
+                    "email": "cherif.bouchelaghem@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "fully/field",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../fully/field/",
+                "reference": "fa8f1d9f138ccfc7f07dd99dd3edddfb",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fully\\field\\": ""
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "fully\\field\\spec\\": "spec/"
                 }
             },
             "license": [

@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "fully/base":"*"
+        "fully/base":"*",
+        "fully/field":"*"
     },
     "autoload": {
         "psr-4": { "fully\\entry\\": "" }
