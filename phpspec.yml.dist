@@ -1,3 +1,4 @@
 suites:
-  entry: { namespace: fully\entry, psr4_prefix: fully\entry, spec_path: src/fully/entry, src_path: src/fully/entry }
-  attribute: { namespace: fully\attribute, psr4_prefix: fully\attribute, spec_path: src/fully/attribute, src_path: src/fully/attribute }
+  base: { namespace: fully\core\base, psr4_prefix: fully\core\base, spec_path: src/fully/core/base, src_path: src/fully/core/base }
+  entry: { namespace: fully\core\field, psr4_prefix: fully\core\field, spec_path: src/fully/core/field, src_path: src/fully/core/field }
+  entry: { namespace: fully\core\entry, psr4_prefix: fully\core\entry, spec_path: src/fully/core/entry, src_path: src/fully/core/entry }
