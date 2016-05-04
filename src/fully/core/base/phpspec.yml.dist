@@ -1,0 +1,5 @@
+suites:
+  base:
+    namespace: fully\core\base
+    psr4_prefix: fully\core\base
+    src_path: .

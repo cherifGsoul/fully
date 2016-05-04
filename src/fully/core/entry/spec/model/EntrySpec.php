@@ -10,6 +10,7 @@ use fully\core\base\model\ToggleableInterface;
 use fully\core\base\model\SluggableInterface;
 use fully\core\base\model\AssociableInterface;
 use fully\core\field\model\FieldInterface;
+use fully\core\entry\model\Entry;
 
 class EntrySpec extends ObjectBehavior
 {
@@ -80,9 +81,9 @@ class EntrySpec extends ObjectBehavior
       $this->getFields()->shouldHaveType('\ArrayAccess');
     }
 
-    public function it_can_add_field(FieldInterface $field)
+    public function its_parent_is_mutable(EntryInterface $entry)
     {
-      $this->addField($field);
-      $this->hasField($field)->shouldReturn(true);
+      $this->setParent($entry);
+      $this->getParent()->shouldReturn($entry);
     }
 }

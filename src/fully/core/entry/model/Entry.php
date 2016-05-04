@@ -12,6 +12,7 @@ class Entry implements EntryInterface
 
   protected $id;
   protected $title;
+  protected $parent;
   protected $publishedOn;
   protected $fields;
   protected $associations;
@@ -75,5 +76,15 @@ class Entry implements EntryInterface
   public function hasField(FieldInterface $field)
   {
     return $this->fields->offsetExists($field);
+  }
+
+  public function setParent(EntryInterface $parent)
+  {
+    $this->parent = $parent;
+  }
+
+  public function getParent()
+  {
+    return $this->parent;
   }
 }
