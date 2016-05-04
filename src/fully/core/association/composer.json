@@ -1,0 +1,14 @@
+{
+    "name": "fully/association",
+    "description": "Object association management",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

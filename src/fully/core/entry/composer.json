@@ -1,0 +1,29 @@
+{
+    "name": "fully/core/entry",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.tv"
+        }
+    ],
+    "require": {
+        "fully/base":"*",
+        "fully/field":"*"
+    },
+    "autoload": {
+        "psr-4": { "fully\\core\\entry\\": "" }
+    },
+    "autoload-dev": {
+        "psr-4": { "fully\\core\\entry\\spec\\": "spec/" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../*/*"
+        }
+    ]
+}

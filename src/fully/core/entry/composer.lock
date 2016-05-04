@@ -1,0 +1,79 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "16ed6e3ed80f723edcac421a7cfadb03",
+    "content-hash": "04c65f3b9c27570e889a6c100ad5cd5d",
+    "packages": [
+        {
+            "name": "fully/base",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../core/base/",
+                "reference": "afe1d49ed8317ede8f526db2d5aa799cfd08d6e6",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fully\\core\\base\\": ""
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "fully\\core\\base\\spec\\": "spec/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cherif BOUCHELAGHEM",
+                    "email": "cherif.bouchelaghem@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "fully/field",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../core/field/",
+                "reference": "d7583a6f3c26e446e5e8e9905c8bd51d40bfddad",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fully\\core\\field\\": ""
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "fully\\core\\field\\spec\\": "spec/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cherif BOUCHELAGHEM",
+                    "email": "cherif.bouchelaghem@gmail.com"
+                }
+            ]
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

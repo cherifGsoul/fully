@@ -1,5 +1,0 @@
-suites:
-  entry:
-    namespace: fully\entry
-    psr4_prefix: fully\entry
-    src_path: .
