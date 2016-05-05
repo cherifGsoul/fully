@@ -16,7 +16,6 @@
     "autoload-dev": {
         "psr-4": { "fully\\core\\base\\spec\\": "spec/" }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
         {
