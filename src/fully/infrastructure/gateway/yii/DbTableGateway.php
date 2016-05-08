@@ -14,6 +14,6 @@ class DbTableGateway extends TableGateway
 
   public function createQuery()
   {
-    return (new Query())->from($this->table);
+    return (new Query())->from([$this->table]);
   }
 }
