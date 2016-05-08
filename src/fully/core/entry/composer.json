@@ -1,11 +1,11 @@
 {
-    "name": "fully/core/entry",
+    "name": "fully/entry",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Cherif BOUCHELAGHEM",
-            "email": "cherif.bouchelaghem@gmail.tv"
+            "email": "cherif.bouchelaghem@gmail.com"
         }
     ],
     "require": {

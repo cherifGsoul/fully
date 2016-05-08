@@ -1,0 +1,30 @@
+{
+    "name": "fully/infrastructure",
+    "description": "Infrastructure package for fully project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "fully/base": "dev-master",
+        "fully/entry": "dev-master",
+        "yiisoft/yii2": "^2.0"
+    },
+    "autoload": {
+        "psr-4": { "fully\\infrastructure\\": "" }
+    },
+    "autoload-dev": {
+        "psr-4": { "fully\\infrastructure\\spec\\": "spec/" }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*/*"
+        }
+    ]
+}

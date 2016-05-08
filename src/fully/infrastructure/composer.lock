@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3ffb32e7f64dbedca3a35c9e460f77d",
-    "content-hash": "0a6b42b4fe844c60c1616961fdea502a",
+    "hash": "e2fe3be00d17a1071245f27aaf8060eb",
+    "content-hash": "a6e43d11cf58969df5deca4e172409c4",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -255,7 +255,7 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../../core/base/",
+                "url": "../core/base/",
                 "reference": "0c1572208befcbed6a6e720675abb31679ec6941",
                 "shasum": null
             },
@@ -285,8 +285,8 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../../core/entry/",
-                "reference": "5e5afc44e8cbc51edc2b69d6c5994ce922b5e660",
+                "url": "../core/entry/",
+                "reference": "418f7e1dcff5200a16ea2ad1f9aaa0d82c1000dc",
                 "shasum": null
             },
             "require": {
@@ -310,7 +310,7 @@
             "authors": [
                 {
                     "name": "Cherif BOUCHELAGHEM",
-                    "email": "cherif.bouchelaghem@gmail.tv"
+                    "email": "cherif.bouchelaghem@gmail.com"
                 }
             ]
         },
@@ -319,7 +319,7 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../../core/field/",
+                "url": "../core/field/",
                 "reference": "d7583a6f3c26e446e5e8e9905c8bd51d40bfddad",
                 "shasum": null
             },
@@ -350,12 +350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b084245111230f6f2066f9d48a77855184fb8bf3"
+                "reference": "b70f93d91920e239dcb87609fc2e84c575d1752a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b084245111230f6f2066f9d48a77855184fb8bf3",
-                "reference": "b084245111230f6f2066f9d48a77855184fb8bf3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b70f93d91920e239dcb87609fc2e84c575d1752a",
+                "reference": "b70f93d91920e239dcb87609fc2e84c575d1752a",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-05-05 12:32:46"
+            "time": "2016-05-07 16:38:07"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -486,53 +486,7 @@
             "time": "2016-04-14 08:46:37"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "yiisoft/yii2-codeception",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "572a6d46d942cc5733c45931fdbd1d60228f3c89"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/572a6d46d942cc5733c45931fdbd1d60228f3c89",
-                "reference": "572a6d46d942cc5733c45931fdbd1d60228f3c89",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": ">=2.0.4"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\codeception\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Jebri",
-                    "email": "mark.github@yandex.ru"
-                }
-            ],
-            "description": "The Codeception integration for the Yii framework",
-            "keywords": [
-                "codeception",
-                "yii2"
-            ],
-            "time": "2016-04-14 08:46:27"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {

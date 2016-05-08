@@ -11,8 +11,8 @@ class Factory implements FactoryInterface
 		$this->className = $className;
 	}
 
-	public function create()
+	public function createNew()
 	{
-		return new $this->className;
+		return new $this->className();
 	}
 }

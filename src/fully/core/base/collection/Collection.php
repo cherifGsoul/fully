@@ -3,7 +3,7 @@ namespace fully\core\base;
 
 use Traversable;
 
-interface collection extends Traversable
+interface Collection extends Traversable
 {
 
 }

@@ -1,5 +1,5 @@
 {
-    "name": "fully/entry",
+    "name": "fully/entry-module",
     "type": "yii2-module",
     "license": "MIT",
     "authors": [
@@ -9,14 +9,16 @@
         }
     ],
     "minimum-stability": "dev",
-    "autoload-dev": {
+    "autoload": {
         "psr-4": { "fully\\modules\\entry\\": "" }
     },
     "autoload-dev": {
         "psr-4": { "fully\\modules\\entry\\tests\\": "tests/" }
     },
     "require": {
-        "yiisoft/yii2": "^2.0"
+        "yiisoft/yii2": "^2.0",
+        "fully/base": "dev-master",
+        "fully/entry": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "^2.0"
@@ -26,5 +28,11 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../*/*"
+        }
+    ]
 }

@@ -1,0 +1,5 @@
+suites:
+  base:
+    namespace: fully\modules\entry
+    psr4_prefix: fully\modules\entry
+    src_path: .
